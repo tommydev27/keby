@@ -14,11 +14,9 @@
     <title>Tommy Website</title>
 
     <!-- CSS -->
-    <link rel="preload" href="style.css" as="style">
-    <link rel="preload" href="customfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     
 </head>
@@ -27,9 +25,9 @@
       
         body {
             font-family: 'CustomFont', 'Arial', 'Segoe UI', 'Noto Sans', sans-serif;
-            background: ;
+                background: white;
             }
-          
+
            .profile-name {
             font-size: 15px;
             margin-top: 3px;
@@ -122,6 +120,7 @@
                 padding-right: 0px;
                 margin-right: auto;
                 }
+
 
             .keyboard-container {
                 justify-content: center;
@@ -365,22 +364,50 @@
         .copybutton:hover {
             background-color: #0056b3; 
        }
+/* Layar loading */
+#loading-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: fadeOut 0.95s forwards 0.95s; /* Hilang setelah 0.95 detik */
+}
+
+/* Animasi menghilangkan loading */
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.loader {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 5px solid rgb(175,220,227);
+    border-top: 5px solid #fff;
+    animation: spin 0.55s linear infinite;
+}
+
+/* Animasi putaran */
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 
     </style>
-    
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FK1EY26W82">
-            </script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'G-FK1EY26W82');
-            </script>
-            
-    </head>
-      <body>
+    <body>
+        <div id="loading-screen">
+          <div class="loader"></div>
+            </div>
+
         <div class="container">
           <div class="profile-name">
           Keyboard 
