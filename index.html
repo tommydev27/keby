@@ -21,32 +21,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            document.body.style.display = "block"; 
-            
-        });
-    </script>
-    
-    <style>
-        body { display: none; } 
-    </style>
 </head>
   <body>
-
-    <noscript>
-        <meta http-equiv="refresh" content="0;url=blocked.html">
-    </noscript>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            let elem = document.createElement("div");
-            elem.innerHTML = `
-               
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
       <style>
       
         body {
@@ -129,7 +105,7 @@
               width: 100%;
               height: 90px;
               padding: 5px;
-              font-size: 13px;
+              font-size: 16px;
               line-height: 1.0;
               text-indent: 0px;
               border: 1px solid #cecfcf;
@@ -157,7 +133,7 @@
                 flex-wrap: wrap;
                 justify-content: flex-start;
                 width: fit-content;
-                padding: 3px 6px;
+                padding: 5px 4px;
                 border-radius: 8px;
                  width: 100%;
                  padding-top: 3px;
@@ -173,16 +149,16 @@
                   display: inline-flex;
                   justify-content: center;
                   align-items: center;
-                  width: 28px;
-                  height: 25px
-                  padding: 0px;
-                  font-size: 14px;
+                  width: 32px;
+                  height: 25px;
+                  padding: 8px;
+                  font-size: 16px;
                   margin-bottom: 5px;
                   border-style: solid;
                   border: 1px solid #999;
                   background-color: #fff;
                   box-shadow: 1px 1px 1px #5e7a73, -1px -1px 1px #ffffff;
-                  color: #333;
+                  color: black;
                   border-radius: 4px;
                   cursor: pointer;
                   }
@@ -325,25 +301,8 @@
             z-index: 1000;
           }
         
-        /* (container) */
-        .textarea-container {
-            width: 100%;
-            padding: 0px;
-            border-radius: 8px; /* Sudut melengkung */
-            background-color: #f9f9f9; /* Warna latar */
-        }
-        
-        /* (textarea) */
-        .textarea-container textarea {
-            width: 100%;
-            max-height: 35px; /* Sesuaikan tinggi */
-            padding: 5px;
-            border: 1px solid gray;
-            border-radius: 5px;
-            font-size: 15px;
-            background-color: #fff;
-            resize: vertical; /* Bisa diubah ukurannya secara vertikal */
-            }
+
+
             
           .fixed-button {
             position: fixed;
@@ -361,13 +320,9 @@
             overflow-x: hidden; 
         }
         
-          #overlay {
-            background: linear-gradient(to bottom right, #8bb8fd, #e7f0ff);
-            background-size: cover;
-            }
         
           #notes {
-            background: rgba(201,212,255,0.8);
+            background: rgb(143,194,255);
             border-radius: 10px;
             padding: 20px;
           }
@@ -399,10 +354,10 @@
         
         .copybutton {
             cursor: pointer;
-            background-color: #333; 
+            background-color: #0e4fc5; 
             color: white; 
             padding: 2px 5px;
-            border-radius: 10px; 
+            border-radius: 5px; 
             border: none;
             font-weight: bold;
             }
@@ -7101,20 +7056,15 @@ document.querySelectorAll('.keyboard').forEach(keyboard => {
       
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Sembunyikan semua keyboard di awal
     document.querySelectorAll('.keyboard').forEach(kb => kb.style.display = 'none');
 
-    // Fungsi untuk toggle keyboard
-    function toggleKeyboard(keyboardId) {
-        const keyboard = document.getElementById(keyboardId);
-        if (!keyboard) return;
-
-        // Sembunyikan semua keyboard sebelum menampilkan yang dipilih
-        document.querySelectorAll('.keyboard').forEach(kb => kb.style.display = 'none');
-
-        // Tampilkan atau sembunyikan keyboard yang diklik
-        keyboard.style.display = (keyboard.style.display === 'block') ? 'none' : 'block';
+    // Tampilkan keyboard pertama
+    const firstKeyboard = document.getElementById('keyboard');
+    if (firstKeyboard) {
+        firstKeyboard.style.display = 'block';
     }
+
+
 
     // Tambahkan event listener ke setiap tombol
     document.getElementById('numbers1').addEventListener('click', () => toggleKeyboard('keyboard1'));
@@ -7147,7 +7097,9 @@ document.getElementById('numbers20').addEventListener('click', () => toggleKeybo
    </div>
      </div>
  
-
+        <div class id= "container" style=" width: 100%;">
+      <h1 style="font-size: 15px; display: flex; align-items: center; justify-content: space-between; padding: 0px; font-weight:bold;"> 
+        font Style </h1>
 
     <!-- Overlay Latar Belakang -->
     <div id="overlay">
@@ -7688,6 +7640,99 @@ TOMMY 𝓐ᵈʰ͜͡ɛˡʸ͟ɴ͟͠𝔬‣⁌͜͡❬❬͜͡❭❭͜͡⁍๏ᆖᆖ�
   </div>
 </div>
 
+<!-- Hasil Font -->
+<div id="text" style="height: 210px; overflow-y: auto; margin-top: 10px; width: 100%;">
+    
+    <!-- Font 1 -->
+    <div class="input-group mb-3">
+        <input type="text" class="form-control text-1" value="ꕤϳ๏ʂɧ︢ɛᴘɩɴ乀ꕺノ＊＿﹅ 乀ꕺノ" id="copy_0" readonly>
+        <div class="input-group-append">
+            <span class="input-group-text copybutton" style="cursor:pointer;" data-clipboard-target="#copy_0">Copy</span>
+        </div>
+    </div>
+
+    <!-- Font 2 -->
+    <div class="input-group mb-3">
+        <input type="text" class="form-control text-2" value="ﾐﾑﾕﾓﾒﾐꜛꕤ ツ︻ꔮﾃꔷ一一一一メ" id="copy_1" readonly>
+        <div class="input-group-append">
+            <span class="input-group-text copybutton" style="cursor:pointer;" data-clipboard-target="#copy_1">Copy</span>
+        </div>
+    </div>
+
+    <!-- Font 3 hingga Font 16 -->
+    <!-- Disusun ulang agar lebih rapi dan mudah dibaca -->
+
+    <div class="input-group mb-3">
+        <input type="text" class="form-control text-3" value="ꕤꗚ（〇〪〭〫〬፠︱匚丫乃乇尺︱፠〇〪〭〫〬）ꗚꕤ" id="copy_2" readonly>
+        <div class="input-group-append">
+            <span class="input-group-text copybutton" style="cursor:pointer;" data-clipboard-target="#copy_2">Copy</span>
+        </div>
+    </div>
+
+    <div class="input-group mb-3">
+        <input type="text" class="form-control text-4" value="▂ン㔔⌥✪▰▰▰━───╼💥  🐷" id="copy_3" readonly>
+        <div class="input-group-append">
+            <span class="input-group-text copybutton" style="cursor:pointer;" data-clipboard-target="#copy_3">Copy</span>
+        </div>
+    </div>
+
+    <div class="input-group mb-3">
+        <input type="text" class="form-control text-5" value="乀۵ꕢﷺꕢ５ノꕺ ꕤᴀʟᴇxᴀɴᴅʀᴀꕤ " id="copy_4" readonly>
+        <div class="input-group-append">
+            <span class="input-group-text copybutton" style="cursor:pointer;" data-clipboard-target="#copy_4">Copy</span>
+        </div>
+    </div>
+
+    <div class="input-group mb-3">
+        <input type="text" class="form-control text-6" value="꘏＿＿＿＿＿꘏ꕬꖯꕺꖀꔀꖻ㉈曰ꖩ" id="copy_5" readonly>
+        <div class="input-group-append">
+            <span class="input-group-text copybutton" style="cursor:pointer;" data-clipboard-target="#copy_5">Copy</span>
+        </div>
+    </div>
+
+    <div class="input-group mb-3">
+        <input type="text" class="form-control text-7" value="一ꔹꔮꕤꔮ＼ꕺ乀ｕｎｉｋノꕺ／ꔮꕤꔮꔹ一" id="copy_6" readonly>
+        <div class="input-group-append">
+            <span class="input-group-text copybutton" style="cursor:pointer;" data-clipboard-target="#copy_6">Copy</span>
+        </div>
+    </div>
+
+    <div class="input-group mb-3">
+        <input type="text" class="form-control text-8" value="༺ꔮ︵㊉〪〭〫〬དʋ︭︦༎ʂ︭︦།ɛ︭︦༎ʀ︭︦ཌ㊉〪〭〫〬︵ꔮ༻" id="copy_7" readonly>
+        <div class="input-group-append">
+            <span class="input-group-text copybutton" style="cursor:pointer;" data-clipboard-target="#copy_7">Copy</span>
+        </div>
+    </div>
+
+    <!-- Font 9 hingga Font 16 -->
+    <!-- Disusun dengan format yang sama -->
+
+<div class="input-group mb-3"><input type="text" class="form-control text-17" value="《卝ꕤ卝》l NAME l《卝ꕤ卝》" id="copy_16" readonly="readonly"><div class="input-group-append"><span class="input-group-text copybutton" style="cursor:pointer;" data-clipboard-action="copy" data-clipboard-target="#copy_16">Copy</span></div></div><div class="input-group mb-3"><input type="text" class="form-control text-18" value="乀۵ꕢﷺ NAME ꕢ۵ノꔮꔷ一一一一ꔷꔷꔮ" id="copy_17" readonly="readonly"><div class="input-group-append"><span class="input-group-text copybutton" style="cursor:pointer;" data-clipboard-action="copy" data-clipboard-target="#copy_17">Copy</span></div></div><div class="input-group mb-3"><input type="text" class="form-control text-19" value="（﹊＼꘏ꕺ NAME ꕺ꘏／﹊）" id="copy_18" readonly="readonly"><div class="input-group-append"><span class="input-group-text copybutton" style="cursor:pointer;" data-clipboard-action="copy" data-clipboard-target="#copy_18">Copy</span></div></div><div class="input-group mb-3"><input type="text" class="form-control text-20" value="ꕤ NAME 彡乀ꕺノ＊＿﹅  ʚ︡ੇੑɞ︠ܓܐ" id="copy_19" readonly="readonly"><div class="input-group-append"><span class="input-group-text copybutton" style="cursor:pointer;" data-clipboard-action="copy" data-clipboard-target="#copy_19">Copy</span></div></div><div class="input-group mb-3"><input type="text" class="form-control text-21" value="ʚ︡ੇੑɞ︠ܓܐ NAME ʚ︡ੇੑɞ︠ܓܐ" id="copy_20" readonly="readonly"><div class="input-group-append"><span class="input-group-text copybutton" style="cursor:pointer;" data-clipboard-action="copy" data-clipboard-target="#copy_20">Copy</span></div></div><div class="input-group mb-3"><input type="text" class="form-control text-22" value="߷ NAME ︻Σ፯፬፯፶㉈曰芅ﾃᆖꔷꔷꔷ一一" id="copy_21" readonly="readonly"><div class="input-group-append"><span class="input-group-text copybutton" style="cursor:pointer;" data-clipboard-action="copy" data-clipboard-target="#copy_21">Copy</span></div></div><div class="input-group mb-3"><input type="text" class="form-control text-23" value="꘏＿＿＿＿＿꘏ꕬꖯꕺꖀ NAME ꖻ㉈曰ꖩ" id="copy_22" readonly="readonly"><div class="input-group-append"><span class="input-group-text copybutton" style="cursor:pointer;" data-clipboard-action="copy" data-clipboard-target="#copy_22">Copy</span></div></div><div class="input-group mb-3"><input type="text" class="form-control text-24" value="乀＿۵꘏）꘏ꕢ NAME ꕢ꘏（꘏٭＿ノ" id="copy_23" readonly="readonly"><div class="input-group-append"><span class="input-group-text copybutton" style="cursor:pointer;" data-clipboard-action="copy" data-clipboard-target="#copy_23">Copy</span></div></div><div class="input-group mb-3"><input type="text" class="form-control text-25" value="＿父（〇〪〭〫〬། ༽፠༽། NAME །༼፠༼། 〇〪〭〫〬）父＿" id="copy_24" readonly="readonly"><div class="input-group-append"><span class="input-group-text copybutton" style="cursor:pointer;" data-clipboard-action="copy" data-clipboard-target="#copy_24">Copy</span></div></div><div class="input-group mb-3"><input type="text" class="form-control text-26" value="༺ꔮ︵㊉〪〭〫〬ད NAME ཌ㊉〪〭〫〬︵ꔮ༻" id="copy_25" readonly="readonly"><div class="input-group-append"><span class="input-group-text copybutton" style="cursor:pointer;" data-clipboard-action="copy" data-clipboard-target="#copy_25">Copy</span></div></div>
+<div class="input-group mb-3"><input type="text" class="form-control text-27" value="ʚ︡ꔮɞ︠ NAME ʚ︡ꔮɞ︠" id="copy_26" readonly="readonly"><div class="input-group-append"><span class="input-group-text copybutton" style="cursor:pointer;" data-clipboard-action="copy" data-clipboard-target="#copy_26">Copy</span></div></div><div class="input-group mb-3"><input type="text" class="form-control text-28" value="一一一ꔷꔷꔷꔮɞ︠︻ NAME ︻ʚ︡ꔮꔷꔷꔷ一一一" id="copy_27" readonly="readonly"><div class="input-group-append"><span class="input-group-text copybutton" style="cursor:pointer;" data-clipboard-action="copy" data-clipboard-target="#copy_27">Copy</span></div></div><div class="input-group mb-3"><input type="text" class="form-control text-29" value="乀۵ꕢﷺꕢ۵ノ NAME 乀۵ꕢﷺꕢ۵ノ" id="copy_28" readonly="readonly"><div class="input-group-append"><span class="input-group-text copybutton" style="cursor:pointer;" data-clipboard-action="copy" data-clipboard-target="#copy_28">Copy</span></div></div><div class="input-group mb-3"><input type="text" class="form-control text-30" value="一ꔷꔮꕤꔮ＼ꕺ＼ NAME ／ꕺ／ꔮꕤꔮꔷ一" id="copy_29" readonly="readonly"><div class="input-group-append"><span class="input-group-text copybutton" style="cursor:pointer;" data-clipboard-action="copy" data-clipboard-target="#copy_29">Copy</span></div></div>
+<div class="input-group mb-3"><input type="text" class="form-control text-85" value="＿父（〇〪〭〫〬། ༽፠༽། [[text]] །༼፠༼། 〇〪〭〫〬）父＿" id="copy_84" readonly="readonly"><div class="input-group-append"><span class="input-group-text copybutton" style="cursor:pointer;" data-clipboard-action="copy" data-clipboard-target="#copy_84">Copy</span></div></div><div class="input-group mb-3"><input type="text" class="form-control text-86" value="乀＿۵꘏）꘏ꕢ ꕢ꘏（꘏٭＿ノ" id="copy_85" readonly="readonly"><div class="input-group-append"><span class="input-group-text copybutton" style="cursor:pointer;" data-clipboard-action="copy" data-clipboard-target="#copy_85">Copy</span></div></div><div class="input-group mb-3"><input type="text" class="form-control text-87" value="♨️☂️͟𝚂͟𝚎͟𝚕͟𝚊͟𝚖͟𝚊͜͠𝚝 𝚍͜𝚊͟𝚝͟𝚊͟𝚗͟͠𝚐 ☂️ ＿
+♥️________♡ツ 2️⃣0️⃣2️⃣4️⃣  ＿" id="copy_86" readonly="readonly"><div class="input-group-append"><span class="input-group-text copybutton" style="cursor:pointer;" data-clipboard-action="copy" data-clipboard-target="#copy_86">Copy</span></div></div><div class="input-group mb-3"><input type="text" class="form-control text-88" value="︻ཬﾃ罒ﾛ〼ﾛﾃ๏一一一一一一＊
+ＯＫＥ ＧＡＳＳＳ．．！！！" id="copy_87" readonly="readonly"><div class="input-group-append"><span class="input-group-text copybutton" style="cursor:pointer;" data-clipboard-action="copy" data-clipboard-target="#copy_87">Copy</span></div></div><div class="input-group mb-3"><input type="text" class="form-control text-89" value="🪶ℳ𝓎 𝓁𝒾𝒻ℯ 𝒹𝒾𝒻𝒻ℯ𝓇ℯ𝓃𝓉 ____________
+🎱➦➲╰─────────╮🖋️" id="copy_88" readonly="readonly"><div class="input-group-append"><span class="input-group-text copybutton" style="cursor:pointer;" data-clipboard-action="copy" data-clipboard-target="#copy_88">Copy</span></div></div></div>
+
+   </div>
+    <hr>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".copybutton").forEach(button => {
+        button.addEventListener("click", function () {
+            let targetId = this.getAttribute("data-clipboard-target");
+            let inputField = document.querySelector(targetId);
+
+            if (inputField) {
+                inputField.select();
+                document.execCommand("copy");
+                alert("Teks berhasil disalin!");
+            }
+        });
+    });
+});
+</script>
+
 
 <script>
     document.getElementById("homeButton").addEventListener("click", function() {
@@ -7699,13 +7744,6 @@ TOMMY 𝓐ᵈʰ͜͡ɛˡʸ͟ɴ͟͠𝔬‣⁌͜͡❬❬͜͡❭❭͜͡⁍๏ᆖᆖ�
         document.getElementById("overlay").style.display = "none";
         document.getElementById("notes").style.display = "none";
     }
-    </script>
-    <script>
-
-
-            `;
-            document.body.appendChild(elem);
-        });
     </script>
 
 </body>
